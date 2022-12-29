@@ -61,6 +61,9 @@ $pcap_filename = $val['pcap_filename'];
 $video_filename= $val['video_filename'];
 $msg_filename= $val['msg_filename'];
 
+exec("php /home/administrator/dejavuEngine/artisan save:log --decoyName='$decoyName' --decoyGroup='$decoyGroup' --decoyIP='$decoyIP' --attackerIP='$attackerIP' --eventType='$eventType' --eventCategory='$eventCategory' --rawlog='$rawlog' --serviceType='$serviceType' --decoyType='$decoy_type' --pcap_filename='$pcap_filename' --video_filename='$video_filename' --msg_filename='$msg_filename'");
+
+
 if($apiStatus == 1)
 {
 
